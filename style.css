@@ -766,3 +766,11 @@ body {
   color: #666;
   font-weight: 500;
 }
+
+.resumebtn {
+  background: #f5980e;
+  padding: 6px 14px;
+  text-decoration: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

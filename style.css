@@ -715,6 +715,15 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .work .content .card {
+    flex-basis: 70%;
+  }
+  .services .content .card {
+    flex-basis: 70%;
+  }
+}
+
 .scrollToTop-btn {
   z-index: 999;
   position: fixed;

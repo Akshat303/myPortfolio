@@ -1,655 +1,341 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>
+      Responsive Personal Portfolio Website - HTML, CSS & Vanilla Javascript
+    </title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
   </head>
-  <body class="main-content light-mode">
-    <header class="container header active" id="home">
-      <div class="header-content">
-        <div class="left-header">
-          <div class="h-shape"></div>
-          <div class="image">
-            <img src="img/hero.png" alt="" />
-          </div>
-        </div>
-        <div class="right-header">
-          <h1 class="name">
-            Hi, I'm <span>Akshat Srivastava.</span>
-            A Software Engineer.
-          </h1>
-          <p>
-            I'm a Web Developer, I love to create beautiful and functional
-            websites. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Officia, libero? Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Neque blanditiis sed aut!
-          </p>
-          <div class="btn-con">
-            <a href="./img/Akshat_Resume .pdf" class="main-btn">
-              <span class="btn-text">Download CV</span>
-              <span class="btn-icon"><i class="fas fa-download"></i></span>
-            </a>
-          </div>
-        </div>
+  <body>
+    <div class="scrollToTop-btn">
+      <i class="fas fa-angle-up"></i>
+    </div>
+
+    <header>
+      <a href="#" class="brand">Jacob</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <a href="#main">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
       </div>
     </header>
-    <main>
-      <section class="container about" id="about">
-        <div class="main-title">
-          <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
-        </div>
-        <div class="about-container">
-          <div class="left-about">
-            <h4>Information About me</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              labore nihil obcaecati consequatur. Debitis error doloremque, vero
-              eos vel nemo eius voluptatem dicta tenetur modi. <br />
-              <br />
-              La musica delectus dolore fugiat exercitationem a, ipsum quidem
-              quo enim natus accusamus labore dolores nam. Unde. Lorem ipsum
-              dolor sit amet consectetur, adipisicing elit. Harum non
-              necessitatibus deleniti eum soluta.
-            </p>
-            <div class="btn-con">
-              <a href="./img/Akshat_Resume .pdf" class="main-btn">
-                <span class="btn-text">Download CV</span>
-                <span class="btn-icon"><i class="fas fa-download"></i></span>
-              </a>
-            </div>
-          </div>
-          <div class="right-about">
-            <div class="about-item">
-              <div class="abt-text">
-                <p class="large-text">15+</p>
-                <p class="small-text">
-                  Projects <br />
-                  Completed
-                </p>
-              </div>
-            </div>
-            <div class="about-item">
-              <div class="abt-text">
-                <p class="large-text">1.5+</p>
-                <p class="small-text">
-                  Years of <br />
-                  experience
-                </p>
-              </div>
-            </div>
-            <div class="about-item">
-              <div class="abt-text">
-                <!-- <p class="large-text">300+</p>
-                <p class="small-text">
-                  Happy <br />
-                  Clients
-                </p> -->
-              </div>
-            </div>
-            <div class="about-item">
-              <div class="abt-text">
-                <!-- <p class="large-text">400+</p>
-                <p class="small-text">
-                  Customer <br />
-                  reviews
-                </p> -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- My Skills -->
-        <div class="about-stats">
-          <h4 class="stat-title">My Skills</h4>
-          <!-- FrontEnd -->
-          <div class="progress-bars">
-            <div class="progress-bar">
-              <p class="prog-title">javascript</p>
-              <div class="progress-con">
-                <!-- <p class="prog-text">75%</p> -->
-                <div class="progress">
-                  <span class="eighty"></span>
-                </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">ReactJS</p>
-              <div class="progress-con">
-                <!-- <p class="prog-text">75%</p> -->
-                <div class="progress">
-                  <span class="ninety"></span>
-                </div>
-              </div>
-            </div>
 
-            <div class="progress-bar">
-              <p class="prog-title">html5</p>
-              <div class="progress-con">
-                <!-- <p class="prog-text">80%</p> -->
-                <div class="progress">
-                  <span class="eighty-seven"></span>
-                </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">css3</p>
-              <div class="progress-con">
-                <!-- <p class="prog-text">95%</p> -->
-                <div class="progress">
-                  <span class="eighty-seven"></span>
-                </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">Bootstrap</p>
-              <div class="progress-con">
-                <!-- <p class="prog-text">87%</p> -->
-                <div class="progress">
-                  <span class="ninety"></span>
-                </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">tailwind css</p>
-              <div class="progress-con">
-                <!-- <p class="prog-text">70%</p> -->
-                <div class="progress">
-                  <span class="seventy-five"></span>
-                </div>
-              </div>
-            </div>
+    <section class="main" id="main">
+      <div class="content">
+        <h2>Hello, I'm<br /><span>Jacob Stevens</span></h2>
+        <div class="animated-text">
+          <h3>Web Designer</h3>
+          <h3>Web Developer</h3>
+          <h3>Motion Graphic Designer</h3>
+        </div>
+        <a href="./images/Akshat_Resume .pdf" target="_blank" class="btn"
+          >See My Resume</a
+        >
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </section>
 
-            <!-- Backend -->
-            <div class="progress-bar">
-              <p class="prog-title">PHP</p>
-              <div class="progress-con">
-                <!-- <p class="prog-text">80%</p> -->
-                <div class="progress">
-                  <span class="eighty"></span>
-                </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">laravel</p>
-              <div class="progress-con">
-                <!-- <p class="prog-text">80%</p> -->
-                <div class="progress">
-                  <span class="ninety"></span>
-                </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">NodeJs</p>
-              <div class="progress-con">
-                <!-- <p class="prog-text">95%</p> -->
-                <div class="progress">
-                  <span class="eighty"></span>
-                </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">ExpressJs</p>
-              <div class="progress-con">
-                <!-- <p class="prog-text">75%</p> -->
-                <div class="progress">
-                  <span class="seventy"></span>
-                </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">MongoDb</p>
-              <div class="progress-con">
-                <!-- <p class="prog-text">75%</p> -->
-                <div class="progress">
-                  <span class="eighty"></span>
-                </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">MySql</p>
-              <div class="progress-con">
-                <!-- <p class="prog-text">87%</p> -->
-                <div class="progress">
-                  <span class="eighty-seven"></span>
-                </div>
-              </div>
-            </div>
+    <section class="about" id="about">
+      <div class="title reveal">
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="content">
+        <div class="column col-left reveal">
+          <div class="img-card">
+            <img src="images/img1.jpg" alt="" />
           </div>
         </div>
+        <div class="column col-right reveal">
+          <h2 class="content-title">Hey There! I'm Jacob Stevens</h2>
+          <p class="paragraph-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.<br /><br />Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+          <a href="#" class="btn">See More</a>
+        </div>
+      </div>
+    </section>
 
-        <!-- Timeline -->
-        <h4 class="stat-title">My Timeline</h4>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-briefcase"></i>
+    <section class="skills" id="skills">
+      <div class="title reveal">
+        <h2 class="section-title">My Skills</h2>
+      </div>
+      <div class="content">
+        <div class="column col-left reveal">
+          <h2 class="content-title">My Skills and Experiences</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <a href="#" class="btn">See More</a>
+        </div>
+        <div class="column col-right reveal">
+          <div class="bar">
+            <div class="info">
+              <span>HTML</span>
+              <span>95%</span>
             </div>
-            <p class="tl-duration">2010 - present</p>
-            <h5>Web Developer<span> - Vircrosoft</span></h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              quasi vero fugit.
-            </p>
+            <div class="line html"></div>
           </div>
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-briefcase"></i>
+          <div class="bar">
+            <div class="info">
+              <span>CSS</span>
+              <span>85%</span>
             </div>
-            <p class="tl-duration">2008 - 2011</p>
-            <h5>Software Engineer<span> - Boogle, Inc.</span></h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              quasi vero fugit.
-            </p>
+            <div class="line css"></div>
           </div>
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-briefcase"></i>
+          <div class="bar">
+            <div class="info">
+              <span>Javascript</span>
+              <span>80%</span>
             </div>
-            <p class="tl-duration">2016 - 2017</p>
-            <h5>C++ Programmer<span> - Slime Tech</span></h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              quasi vero fugit.
-            </p>
+            <div class="line javascript"></div>
           </div>
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-briefcase"></i>
+          <div class="bar">
+            <div class="info">
+              <span>JQuery</span>
+              <span>80%</span>
             </div>
-            <p class="tl-duration">2009 - 2013</p>
-            <h5>Business Degree<span> - Sussex University</span></h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              quasi vero fugit.
-            </p>
+            <div class="line jquery"></div>
           </div>
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-briefcase"></i>
+          <div class="bar">
+            <div class="info">
+              <span>PHP</span>
+              <span>75%</span>
             </div>
-            <p class="tl-duration">2013 - 2016</p>
-            <h5>Computer Science Degree<span> - Brookes University</span></h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              quasi vero fugit.
-            </p>
-          </div>
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <p class="tl-duration">2017 - present</p>
-            <h5>3d Animation<span> - Brighton University</span></h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              quasi vero fugit.
-            </p>
+            <div class="line php"></div>
           </div>
         </div>
-      </section>
-      <section class="container" id="portfolio">
-        <div class="main-title">
-          <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="title reveal">
+        <h2 class="section-title">My Work</h2>
+      </div>
+      <div class="content">
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="images/work1.jpg" alt="" />
+          </div>
         </div>
-        <p class="port-text">
-          Here is some of my work that I've done in various programming
-          languages.
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="images/work2.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="images/work3.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="images/work4.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="images/work5.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="images/work6.jpg" alt="" />
+          </div>
+        </div>
+        <div class="title reveal">
+          <a href="#" class="btn">See All</a>
+        </div>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="title reveal">
+        <h2 class="section-title">My Services</h2>
+        <p class="service-card">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
         </p>
-        <div class="portfolios">
-          <div class="portfolio-item">
-            <div class="image">
-              <img src="img/port1.jpg" alt="" />
+      </div>
+      <div class="content">
+        <div class="card reveal">
+          <div class="service-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <div class="info">
+            <h3>Web Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="service-icon">
+            <i class="fas fa-file-code"></i>
+          </div>
+          <div class="info">
+            <h3>Web Development</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="service-icon">
+            <i class="fas fa-object-group"></i>
+          </div>
+          <div class="info">
+            <h3>Motion Graphic Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="service-icon">
+            <i class="fas fa-object-group"></i>
+          </div>
+          <div class="info">
+            <h3>Motion Graphic Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="service-icon">
+            <i class="fas fa-object-group"></i>
+          </div>
+          <div class="info">
+            <h3>Motion Graphic Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="service-icon">
+            <i class="fas fa-object-group"></i>
+          </div>
+          <div class="info">
+            <h3>Motion Graphic Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="title reveal">
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="card reveal">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
             </div>
-            <div class="hover-items">
-              <h3>Project Source</h3>
-              <div class="icons">
-                <a href="#" class="icon">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="#" class="icon">
-                  <i class="fab fa-behance"></i>
-                </a>
-                <a href="#" class="icon">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </div>
+            <div class="info">
+              <h3>Address</h3>
+              <span>Address, City, Country</span>
             </div>
           </div>
-          <div class="portfolio-item">
-            <div class="image">
-              <img src="img/port2.jpg" alt="" />
+          <div class="card reveal">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
             </div>
-            <div class="hover-items">
-              <h3>Project Source</h3>
-              <div class="icons">
-                <a href="#" class="icon">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="#" class="icon">
-                  <i class="fab fa-behance"></i>
-                </a>
-                <a href="#" class="icon">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </div>
+            <div class="info">
+              <h3>Phone</h3>
+              <span>+00 0000 000 000</span>
             </div>
           </div>
-          <div class="portfolio-item">
-            <div class="image">
-              <img src="img/port3.jpg" alt="" />
+          <div class="card reveal">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
             </div>
-            <div class="hover-items">
-              <h3>Project Source</h3>
-              <div class="icons">
-                <a href="#" class="icon">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="#" class="icon">
-                  <i class="fab fa-behance"></i>
-                </a>
-                <a href="#" class="icon">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </div>
+            <div class="info">
+              <h3>Email Address</h3>
+              <span>contact@email.com</span>
             </div>
           </div>
-          <div class="portfolio-item">
-            <div class="image">
-              <img src="img/port4.jpg" alt="" />
+          <div class="card reveal">
+            <div class="contact-icon">
+              <i class="fas fa-globe"></i>
             </div>
-            <div class="hover-items">
-              <h3>Project Source</h3>
-              <div class="icons">
-                <a href="#" class="icon">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="#" class="icon">
-                  <i class="fab fa-behance"></i>
-                </a>
-                <a href="#" class="icon">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <div class="image">
-              <img src="img/port5.jpg" alt="" />
-            </div>
-            <div class="hover-items">
-              <h3>Project Source</h3>
-              <div class="icons">
-                <a href="#" class="icon">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="#" class="icon">
-                  <i class="fab fa-behance"></i>
-                </a>
-                <a href="#" class="icon">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <div class="image">
-              <img src="img/port2.jpg" alt="" />
-            </div>
-            <div class="hover-items">
-              <h3>Project Source</h3>
-              <div class="icons">
-                <a href="#" class="icon">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="#" class="icon">
-                  <i class="fab fa-behance"></i>
-                </a>
-                <a href="#" class="icon">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <div class="image">
-              <img src="img/port7.jpg" alt="" />
-            </div>
-            <div class="hover-items">
-              <h3>Project Source</h3>
-              <div class="icons">
-                <a href="#" class="icon">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="#" class="icon">
-                  <i class="fab fa-behance"></i>
-                </a>
-                <a href="#" class="icon">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </div>
+            <div class="info">
+              <h3>Website</h3>
+              <span>mywebsite.com</span>
             </div>
           </div>
         </div>
-      </section>
-      <section class="container" id="blogs">
-        <div class="blogs-content">
-          <div class="main-title">
-            <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
-          </div>
-          <div class="blogs">
-            <div class="blog">
-              <img src="img/port6.jpg" alt="" />
-              <div class="blog-text">
-                <h4>How to Create Your Own Website</h4>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Doloribus natus voluptas, eos obcaecati recusandae amet?
-                </p>
-              </div>
+        <div class="row">
+          <div class="contact-form reveal">
+            <h3>Send Message</h3>
+            <div class="input-box">
+              <input type="text" name="" value="" placeholder="Name" />
             </div>
-            <div class="blog">
-              <img src="img/blog1.jpg" alt="" />
-              <div class="blog-text">
-                <h4>How to Become an Expert in Web Design</h4>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Doloribus natus voluptas, eos obcaecati recusandae amet?
-                </p>
-              </div>
+            <div class="input-box">
+              <input type="text" name="" value="" placeholder="Email" />
             </div>
-            <div class="blog">
-              <img src="img/blog2.jpg" alt="" />
-              <div class="blog-text">
-                <h4>Become a Web Designer in 10 Days</h4>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Doloribus natus voluptas, eos obcaecati recusandae amet?
-                </p>
-              </div>
+            <div class="input-box">
+              <textarea
+                name="name"
+                rows="8"
+                cols="80"
+                placeholder="Message"
+              ></textarea>
             </div>
-            <div class="blog">
-              <img src="img/blog3.jpg" alt="" />
-              <div class="blog-text">
-                <h4>Debbuging made easy with Web Inspector</h4>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Doloribus natus voluptas, eos obcaecati recusandae amet?
-                </p>
-              </div>
-            </div>
-            <div class="blog">
-              <img src="img/port1.jpg" alt="" />
-              <div class="blog-text">
-                <h4>Get started with Web Design and UI Design</h4>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Doloribus natus voluptas, eos obcaecati recusandae amet?
-                </p>
-              </div>
-            </div>
-            <div class="blog">
-              <img src="img/port3.jpg" alt="" />
-              <div class="blog-text">
-                <h4>This is what you need to know about Web Design</h4>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Doloribus natus voluptas, eos obcaecati recusandae amet?
-                </p>
-              </div>
+            <div class="input-box">
+              <input type="submit" class="send-btn" name="" value="Send" />
             </div>
           </div>
         </div>
-      </section>
-      <section class="container contact" id="contact">
-        <div class="contact-container">
-          <div class="main-title">
-            <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
-          </div>
-          <div class="contact-content-con">
-            <div class="left-contact">
-              <h4>Contact me here</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
-                laborum numquam? Quam excepturi perspiciatis quas quasi.
-              </p>
-              <div class="contact-info">
-                <div class="contact-item">
-                  <div class="icon">
-                    <i class="fas fa-envelope"></i>
-                    <span>Email</span>
-                  </div>
-                  <p>
-                    <span>: akshat303sri@gmail.com</span>
-                  </p>
-                </div>
-                <div class="contact-item">
-                  <div class="icon">
-                    <i class="fas fa-user-graduate"></i>
-                    <span>Education</span>
-                  </div>
-                  <p>
-                    <span>: B.tech, CSE</span>
-                  </p>
-                </div>
-                <div class="contact-item">
-                  <div class="icon">
-                    <i class="fas fa-user-graduate"></i>
-                    <span>Mobile Number</span>
-                  </div>
-                  <p>
-                    <span>: +91 9914805645</span>
-                  </p>
-                </div>
-                <div class="contact-item">
-                  <div class="icon">
-                    <i class="fas fa-globe-africa"></i>
-                    <span>Languages</span>
-                  </div>
-                  <p>
-                    <span>: English, Hindi</span>
-                  </p>
-                </div>
-                <div class="contact-item">
-                  <div class="icon">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Location</span>
-                  </div>
-                  <p>: India</p>
-                </div>
-              </div>
-              <div class="contact-icons">
-                <div class="contact-icon">
-                  <a href="#" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                  </a>
-                  <a href="#" target="_blank">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="www.facebook.com" target="_blank">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="#" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="right-contact">
-              <form action="" class="contact-form">
-                <div class="input-control i-c-2">
-                  <input type="text" required placeholder="YOUR NAME" />
-                  <input type="email" required placeholder="YOUR EMAIL" />
-                </div>
-                <div class="input-control">
-                  <input type="text" required placeholder="ENTER SUBJECT" />
-                </div>
-                <div class="input-control">
-                  <textarea
-                    name=""
-                    id=""
-                    cols="15"
-                    rows="8"
-                    placeholder="Message Here..."
-                  ></textarea>
-                </div>
-                <div class="submit-btn">
-                  <a href="./img/Akshat_Resume .pdf" class="main-btn">
-                    <span class="btn-text">Download CV</span>
-                    <span class="btn-icon"
-                      ><i class="fas fa-download"></i
-                    ></span>
-                  </a>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <div class="controls">
-      <div class="control active-btn show-name" data-id="home">
-        <i class="fas fa-home"></i>
-      </div>
-      <h4 class="hide">Home</h4>
+    <footer class="footer">
+      <span class="footer-title">Jacob Stevens</span>
+      <p>Copyright @2021 <a href="#">Coding Snow</a>. All Rights Reserved.</p>
+    </footer>
 
-      <div class="control show-name" data-id="about">
-        <i class="fas fa-user"></i>
-      </div>
-      <h4 class="hide">About</h4>
-
-      <div class="control show-name" data-id="portfolio">
-        <i class="fas fa-briefcase"></i>
-      </div>
-      <h4 class="hide">portfolio</h4>
-      <div class="control show-name" data-id="blogs">
-        <i class="far fa-newspaper"></i>
-      </div>
-      <h4 class="hide">My Blog</h4>
-      <div class="control show-name" data-id="contact">
-        <i class="fas fa-envelope-open"></i>
-      </div>
-      <h4 class="hide">Contact</h4>
-    </div>
-    <div class="theme-btn">
-      <i class="fas fa-adjust"></i>
-    </div>
-    <script src="app.js"></script>
+    <script src="script.js" charset="utf-8"></script>
   </body>
 </html>

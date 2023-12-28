@@ -575,10 +575,12 @@ body {
   border: none;
   cursor: pointer;
   transition: 0.5s ease;
+  height: 3rem;
+  border-radius: 23px;
 }
 
 .contact-form .input-box .send-btn:hover {
-  background: #235bf6;
+  background: #34d850;
 }
 
 .footer {

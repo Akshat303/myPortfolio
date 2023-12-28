@@ -284,13 +284,14 @@
               <i class="fab fa-linkedin-in"></i>
             </div>
             <div class="info">
-              <h3>LinkedIn</h3>
               <span>
                 <a
                   href="https://www.linkedin.com/in/akshat303sri/"
                   target="_blank"
                   class="mywebsit"
-                  >akshat303sri</a
+                >
+                  <h3>LinkedIn</h3>
+                  akshat303sri</a
                 ></span
               >
             </div>
@@ -300,8 +301,12 @@
               <i class="fas fa-mobile-alt"></i>
             </div>
             <div class="info">
-              <h3>Mobile</h3>
-              <span>+91 9914805645</span>
+              <span>
+                <a href="tel:9914805645" class="mywebsit">
+                  <h3>Mobile</h3>
+                  +91 9914805645</a
+                >
+              </span>
             </div>
           </div>
           <div class="card reveal">
@@ -309,8 +314,16 @@
               <i class="fas fa-envelope"></i>
             </div>
             <div class="info">
-              <h3>Email Address</h3>
-              <span>akshat303sri@email.com</span>
+              <span>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=akshat303sri@gmail.com"
+                  target="_blank"
+                  class="mywebsit"
+                >
+                  <h3>Email Address</h3>
+                  akshat303sri@gmail.com
+                </a></span
+              >
             </div>
           </div>
           <div class="card reveal">
@@ -318,65 +331,70 @@
               <i class="fas fa-globe"></i>
             </div>
             <div class="info">
-              <h3>Website</h3>
               <span>
                 <a
                   href="https://akshat303.github.io/myPortfolio/"
                   target="_blank"
                   class="mywebsit"
-                  >My Portfolio</a
+                >
+                  <h3>Website</h3>
+                  My Portfolio</a
                 ></span
               >
             </div>
           </div>
         </div>
-        <form action="">
-          <div class="row">
-            <div class="contact-form reveal">
-              <h3>Send Message</h3>
-              <div class="input-box">
-                <input
-                  type="email"
-                  name=""
-                  value=""
-                  placeholder="Email"
-                  required
-                />
-              </div>
+
+        <div class="row">
+          <!-- Whatapp message -->
+          <div class="contact-form reveal">
+            <h3>Send WhatApp Message</h3>
+            <form action="">
               <div class="input-box">
                 <input
                   type="text"
-                  name=""
+                  id="name"
+                  name="name"
                   value=""
                   placeholder="Name"
-                  required
                 />
               </div>
               <div class="input-box">
                 <input
                   type="number"
-                  name=""
+                  id="phone"
+                  name="phone"
                   value=""
                   placeholder="Mobile Number"
-                  required
                 />
               </div>
-
+              <div class="input-box">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value=""
+                  placeholder="Email"
+                />
+              </div>
               <div class="input-box">
                 <textarea
-                  name="name"
+                  type="text"
+                  name="message"
+                  id="message"
                   rows="8"
                   cols="80"
                   placeholder="Message"
-                  required
                 ></textarea>
               </div>
               <div class="input-box">
-                <input type="submit" class="send-btn" name="" value="Send" />
+                <button class="send-btn" onclick="sendToWhatsapp()">
+                  Send
+                </button>
               </div>
-            </div>
+            </form>
           </div>
-        </form>
+        </div>
       </div>
     </section>
 
@@ -384,7 +402,8 @@
       <span class="footer-title">Akshat Srivastava</span>
       <p>Copyright @2023 <a href="#">My Portfolio</a>. All Rights Reserved.</p>
     </footer>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js" charset="utf-8"></script>
   </body>
 </html>

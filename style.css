@@ -358,6 +358,48 @@ p.technology {
   border-radius: 3px 15px 1px 3px;
 }
 
+.php::before {
+  width: 92%;
+}
+.laravel::before {
+  width: 77%;
+}
+.node::before {
+  width: 82%;
+}
+.express::before {
+  width: 80%;
+}
+.mongo::before {
+  width: 88%;
+}
+.sql::before {
+  width: 90%;
+}
+.ajax::before {
+  width: 81%;
+}
+.js::before {
+  width: 88%;
+}
+.react::before {
+  width: 78%;
+}
+.html::before {
+  width: 91%;
+}
+.css::before {
+  width: 89%;
+}
+.tailwind::before {
+  width: 78%;
+}
+.bootstrap::before {
+  width: 84%;
+}
+.jq::before {
+  width: 88%;
+}
 .mern::before {
   width: 82%;
 }

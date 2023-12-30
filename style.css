@@ -410,7 +410,7 @@ p.technology {
   width: 72%;
 }
 
-.services {
+.services-bg {
   position: relative;
   width: 100%;
   /* min-height: 100vh; */
@@ -434,6 +434,17 @@ p.technology {
   overflow: hidden;
   border-radius: 10px;
 }
+
+.work-bg {
+  position: relative;
+  width: 100%;
+  /* min-height: 100vh; */
+  background: url(images/bg-work.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 img.workImage {
   position: absolute;
   top: 0;

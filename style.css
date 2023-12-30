@@ -866,15 +866,17 @@ img.workImage {
   background: url(./images/certificate-bg.jpg) 0 0/100% 100% no-repeat;
   border: 1px solid var(--color-border) !important;
   border-radius: 0.5rem;
-  box-shadow: none !important;
 }
 
 h3.skill-card-certificates {
-  margin: 2rem;
+  margin: 1.5rem 0px 0px 1.5rem;
   z-index: 1;
   color: #1b62d9;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
+}
+.certificates-link {
+  text-decoration: none;
 }
 
 .card-img-certificates {
@@ -882,4 +884,12 @@ h3.skill-card-certificates {
   height: 12rem;
   overflow: hidden;
   border-radius: 10px;
+}
+.view-certificate {
+  margin: 2rem;
+  color: #0a2434;
+  cursor: pointer;
+  padding-top: 3rem;
+  font-weight: bold;
+  font-size: 13px;
 }

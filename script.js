@@ -78,3 +78,73 @@ function sendToWhatsapp() {
 
   window.open(url, "_blank").focus();
 }
+
+// ================================
+
+const toggleBtn = document.getElementById("darkModeToggle");
+
+// Function to switch mode and update button text
+function toggleDarkMode() {
+  const isDark = document.body.classList.toggle("dark-mode");
+
+  // Change button text
+  toggleBtn.textContent = isDark ? "☀️ " : "🌙 ";
+
+  // Save preference
+  localStorage.setItem("darkMode", isDark);
+}
+
+// Add click event
+toggleBtn.addEventListener("click", toggleDarkMode);
+
+// Load preference and set button text on page load
+window.addEventListener("load", () => {
+  const isDark = localStorage.getItem("darkMode") === "true";
+  if (isDark) {
+    document.body.classList.add("dark-mode");
+    toggleBtn.textContent = "☀️ ";
+  }
+});
+
+const track = document.getElementById("sliderTrack");
+const container = document.getElementById("sliderContainer");
+let offset = 0;
+const speed = 1; // px per frame
+let animationId;
+const cardWidth = 320; // including margin
+const totalCards = track.children.length;
+
+function animateSlider() {
+  offset += speed;
+  if (offset >= (cardWidth * totalCards) / 2) {
+    offset = 0;
+  }
+  track.style.transform = `translateX(-${offset}px)`;
+  animationId = requestAnimationFrame(animateSlider);
+}
+
+container.addEventListener("mouseenter", () => {
+  cancelAnimationFrame(animationId);
+});
+
+container.addEventListener("mouseleave", () => {
+  animateSlider();
+});
+
+function slideNext() {
+  offset += cardWidth;
+  if (offset >= (cardWidth * totalCards) / 2) {
+    offset = 0;
+  }
+  track.style.transform = `translateX(-${offset}px)`;
+}
+
+function slidePrev() {
+  offset -= cardWidth;
+  if (offset < 0) {
+    offset = (cardWidth * totalCards) / 2 - cardWidth;
+  }
+  track.style.transform = `translateX(-${offset}px)`;
+}
+
+animateSlider(); // start auto sliding

@@ -6,6 +6,10 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  --blue-color: #90caf9;
+  --black-color: #1e1e1e;
+  --white-color: #fff;
+  --dark-blue-color: #3a6cf4;
 }
 
 section {
@@ -86,7 +90,7 @@ section {
 
 .btn {
   color: #fff;
-  background: #3a6cf4;
+  background: var(--dark-blue-color);
   font-size: 1em;
   font-weight: 600;
   display: inline-block;
@@ -128,7 +132,7 @@ header {
 }
 
 header.sticky {
-  background: #3a6cf4;
+  background: var(--dark-blue-color);
   padding: 10px 200px;
 }
 
@@ -153,7 +157,7 @@ header .navigation a {
 }
 
 header .navigation a:hover {
-  color: #3a6cf4;
+  color: var(--dark-blue-color);
 }
 
 header.sticky .navigation a:hover {
@@ -178,7 +182,7 @@ p {
 
 .section-title {
   position: relative;
-  color: #3a6cf4;
+  color: var(--dark-blue-color);
   font-size: 2.2em;
   font-weight: 800;
   margin-bottom: 60px;
@@ -191,7 +195,7 @@ p {
   left: 50%;
   width: 140px;
   height: 4px;
-  background: #3a6cf4;
+  background: var(--dark-blue-color);
   transform: translateX(-50%);
 }
 
@@ -203,7 +207,7 @@ p {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #3a6cf4;
+  background: var(--dark-blue-color);
   transform: translateX(-50%);
 }
 
@@ -414,7 +418,7 @@ p.technology {
   position: relative;
   width: 100%;
   /* min-height: 100vh; */
-  background: url(images/bg-about.jpg) no-repeat;
+  background: url(images/nnbg-2.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -459,17 +463,6 @@ img.workImage {
   width: 94%;
 }
 
-.service-card {
-  background: #fff;
-  width: 340px;
-  margin: 10px;
-  padding: 25px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
-  border-radius: 10px;
-}
 .services .content .card {
   background: #fff;
   width: 340px;
@@ -478,13 +471,14 @@ img.workImage {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  border: 1px solid #90caf9;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   flex-basis: 30%;
 }
 
 .services .content .card .service-icon {
-  color: #3a6cf4;
+  color: var(--dark-blue-color);
   font-size: 8em;
   text-align: center;
   transition: transform 0.5s ease;
@@ -499,7 +493,7 @@ img.workImage {
 }
 
 .services .content .card .info h3 {
-  color: #3a6cf4;
+  color: var(--dark-blue-color);
   font-size: 1.2em;
   font-weight: 700;
   margin: 10px;
@@ -585,7 +579,7 @@ img.workImage {
 }
 
 .contact .content .row .card .contact-icon {
-  color: #3a6cf4;
+  color: var(--dark-blue-color);
   font-size: 4em;
   text-align: center;
   transition: transform 0.5s ease;
@@ -642,14 +636,14 @@ img.workImage {
   font-size: 1em;
   font-weight: 400;
   outline: none;
-  border: 1px solid #111;
+  border: 1.5px solid var(--dark-blue-color);
   border-radius: 5px;
   resize: none;
 }
 
 .contact-form .input-box .send-btn {
   color: #fff;
-  background: #3a6cf4;
+  background: var(--dark-blue-color);
   display: inline-block;
   font-size: 1.1em;
   font-weight: 500;
@@ -686,7 +680,7 @@ img.workImage {
 }
 
 .footer p a {
-  color: #3a6cf4;
+  color: var(--dark-blue-color);
   font-weight: 600;
   text-decoration: none;
 }
@@ -729,7 +723,7 @@ img.workImage {
   }
 
   header .navigation a:hover {
-    background: #3a6cf4;
+    background: var(--dark-blue-color);
     color: #fff;
     transition: 0.3s ease;
   }
@@ -815,7 +809,7 @@ img.workImage {
 .scrollToTop-btn {
   z-index: 999;
   position: fixed;
-  background: #3a6cf4;
+  background: var(--dark-blue-color);
   color: #fff;
   width: 45px;
   height: 45px;
@@ -865,14 +859,14 @@ img.workImage {
 
 .certificates .content .card .card-img-certificates {
   background: url(./images/certificate-bg.jpg) 0 0/100% 100% no-repeat;
-  border: 1px solid var(--color-border) !important;
-  border-radius: 0.5rem;
+  border: 2px solid var(--blue-color) !important;
+  border-radius: 0.9rem;
 }
 
 h3.skill-card-certificates {
   margin: 1.5rem 0px 0px 1.5rem;
   z-index: 1;
-  color: #1b62d9;
+  color: var(--dark-blue-color);
   font-weight: bold;
   font-size: 24px;
 }
@@ -893,4 +887,107 @@ h3.skill-card-certificates {
   padding-top: 3rem;
   font-weight: bold;
   font-size: 13px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide number input arrows in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* -------------------------------------- */
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.myCard {
+  flex: 0 0 auto;
+  width: 300px;
+  margin: 10px;
+  background: var(--white-color);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #000;
+  padding-bottom: 20px;
+}
+
+.myCard:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-ti tle {
+  font-size: 20px;
+  color: var(--dark-blue-color);
+  margin: 15px 0 10px;
+  font-weight: bold;
+}
+
+.card-desc {
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .myCard {
+    width: 250px;
+  }
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  display: none;
+}
+
+.slider-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.slider-container:hover .slider-btn {
+  display: block;
 }

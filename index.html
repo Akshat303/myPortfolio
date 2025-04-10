@@ -6,6 +6,7 @@
     <title>Akshat Portfolio</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleDark.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
@@ -17,6 +18,7 @@
     </div>
 
     <header>
+      <button id="darkModeToggle">🌙</button>
       <a href="#" class="brand">Software Engineer</a>
       <div class="menu-btn"></div>
       <div class="navigation">
@@ -39,6 +41,7 @@
           <h3>MERN Stack Developer</h3>
           <h3>PHP, Laravel Developer</h3>
           <h3>Wordpress Developer</h3>
+          <h3>Rect</h3>
         </div>
         <a href="./images/Akshat_Resume .pdf" target="_blank" class="btn"
           >See My Resume</a
@@ -98,574 +101,71 @@
         </div>
       </div>
     </section>
-    <!-- =================Skills==================================== -->
-    <section class="skills" id="skills">
-      <div class="title reveal">
-        <h2 class="section-title">My Skills</h2>
-      </div>
-      <div class="content">
-        <div class="column col-left reveal">
-          <h2 class="content-title">My Skills and Experiences</h2>
-          <p>
-            I am a skilled and passionate web developer with expertise in both
-            front-end and back-end technologies. My proficiency includes a wide
-            range of tools and frameworks, allowing me to create dynamic and
-            responsive web applications. With a strong foundation in languages
-            such as JavaScript, PHP, and expertise in popular frameworks like
-            Laravel and the MERN stack, I bring a comprehensive skill set to the
-            table. 🥰
-          </p>
-        </div>
-        <!-- ===========Back-end============= -->
-        <div class="column col-right reveal">
-          <p class="technology">Back-end Development</p>
-          <div class="bar">
-            <div class="info">
-              <span><i class="fab fa-php"></i> PHP</span>
-              <!-- <span>95%</span> -->
-            </div>
-            <div class="line yellow php"></div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span><i class="fab fa-laravel"></i> Laravel</span>
-              <!-- <span>95%</span> -->
-            </div>
-            <div class="line red laravel"></div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span> <i class="fab fa-node"></i> Node.js</span>
-              <!-- <span>95%</span> -->
-            </div>
-            <div class="line green node"></div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span> <i class="fab fa-react"></i> Express.js</span>
-              <!-- <span>95%</span> -->
-            </div>
-            <div class="line yellow express"></div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span> <i class="fas fa-server"></i> MongoDB</span>
-              <!-- <span>95%</span> -->
-            </div>
-            <div class="line red mongo"></div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span> <i class="fas fa-database"></i> MySQL</span>
-              <!-- <span>95%</span> -->
-            </div>
-            <div class="line green sql"></div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span> <i class="fas fa-code"></i> Ajax</span>
-              <!-- <span>95%</span> -->
-            </div>
-            <div class="line yellow ajax"></div>
-          </div>
-        </div>
-        <!-- ==========================Front-end===================== -->
-        <div class="column col-right reveal">
-          <p class="technology">Front-end Development</p>
-          <div class="bar">
-            <div class="info">
-              <span><i class="fab fa-js-square"></i> JavaScript</span>
-              <!-- <span>95%</span> -->
-            </div>
-            <div class="line red js"></div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span><i class="fab fa-react fa-spin"></i> React.js</span>
-              <!-- <span>95%</span> -->
-            </div>
-            <div class="line green react"></div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span><i class="fab fa-html5"></i> HTML</span>
-              <!-- <span>95%</span> -->
-            </div>
-            <div class="line yellow html"></div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span><i class="fab fa-css3-alt"></i> CSS</span>
-              <!-- <span>95%</span> -->
-            </div>
-            <div class="line red css"></div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span><i class="fas fa-bacon"></i> Tailwind CSS</span>
-              <!-- <span>95%</span> -->
-            </div>
-            <div class="line green tailwind"></div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
-              <!-- <span>95%</span> -->
-            </div>
-            <div class="line yellow bootstrap"></div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span
-                ><i class="fab fa-stack-overflow fa-flip-vertical"></i>
-                JQuery</span
-              >
-              <!-- <span>95%</span> -->
-            </div>
-            <div class="line red jq"></div>
-          </div>
-        </div>
-        <!-- ==========================MERN================== -->
-        <div class="column col-right reveal">
-          <p class="technology">Full Stack Development</p>
-          <div class="bar">
-            <div class="info">
-              <span
-                ><i class="fab fa-servicestack"></i> MERN Stack (MongoDB,
-                Express.js, React.js, Node.js)</span
-              >
-              <!-- <span>82%</span> -->
-            </div>
-            <div class="line red mern"></div>
-          </div>
-        </div>
-        <!-- ================CMS======================== -->
-        <div class="column col-right reveal">
-          <p class="technology">Content Management Systems (CMS)</p>
-          <div class="bar">
-            <div class="info">
-              <span><i class="fab fa-wordpress"></i> Wordpress</span>
-              <!-- <span>82%</span> -->
-            </div>
-            <div class="line green wordpress"></div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span><i class="fab fa-magento"></i> Magento.2</span>
-              <!-- <span>78%</span> -->
-            </div>
-            <div class="line yellow magento"></div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- =============My Work================ -->
-    <section class="services work-bg" id="work">
-      <div class="title reveal">
-        <h2 class="section-title">My Work</h2>
-        <!-- <p class="service-card">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p> -->
-      </div>
-      <div class="content">
-        <div class="card reveal">
-          <div class="card-img">
-            <img class="workImage" src="images/work6.jpg" alt="" />
-          </div>
-          <div class="info">
-            <h3>Web Design</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="card-img">
-            <img class="workImage" src="images/work6.jpg" alt="" />
-          </div>
-          <div class="info">
-            <h3>Web Design</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="card-img">
-            <img class="workImage" src="images/work6.jpg" alt="" />
-          </div>
-          <div class="info">
-            <h3>Web Design</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div id="workPage"></div>
+    <script>
+      fetch("test.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("workPage").innerHTML = data;
+        })
+        .catch((err) => console.error("This Section not found:", err));
+    </script>
+
+    <!-- =================Skills==================================== -->
+    <div id="skillsPage"></div>
+    <script>
+      fetch("skill.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("skillsPage").innerHTML = data;
+        })
+        .catch((err) => console.error("This Section not found:", err));
+    </script>
 
     <!-- ==============certificates============== -->
-    <section
-      class="certificates"
-      id="certificates
-"
-    >
-      <div class="title reveal">
-        <h2 class="section-title">My Certificates</h2>
-      </div>
-      <div class="content">
-        <div class="card reveal">
-          <div class="card-img-certificates">
-            <a
-              class="certificates-link"
-              href="https://www.hackerrank.com/certificates/8897e7dfc7bf"
-              target="_blank"
-            >
-              <h3 class="skill-card-certificates">
-                <span class="skill-title">Problem Solving</span>
-              </h3>
-              <div class="view-certificate">View Certificate</div>
-            </a>
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="card-img-certificates">
-            <a
-              class="certificates-link"
-              href="https://www.hackerrank.com/certificates/5a8472ac926d"
-              target="_blank"
-            >
-              <h3 class="skill-card-certificates">
-                <span class="skill-title">React</span>
-              </h3>
-              <div class="view-certificate">View Certificate</div>
-            </a>
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="card-img-certificates">
-            <a
-              class="certificates-link"
-              href="https://www.hackerrank.com/certificates/9ab25f7fde0a"
-              target="_blank"
-            >
-              <h3 class="skill-card-certificates">
-                <span class="skill-title">JavaScript</span>
-              </h3>
-              <div class="view-certificate">View Certificate</div>
-            </a>
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="card-img-certificates">
-            <a
-              class="certificates-link"
-              href="https://www.hackerrank.com/certificates/0e0baf222a74"
-              target="_blank"
-            >
-              <h3 class="skill-card-certificates">
-                <span class="skill-title">SQL</span>
-              </h3>
-              <div class="view-certificate">View Certificate</div>
-            </a>
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="card-img-certificates">
-            <a
-              class="certificates-link"
-              href="https://www.hackerrank.com/certificates/334c4667c249"
-              target="_blank"
-            >
-              <h3 class="skill-card-certificates">
-                <span class="skill-title">Java</span>
-              </h3>
-              <div class="view-certificate">View Certificate</div>
-            </a>
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="card-img-certificates">
-            <a
-              class="certificates-link"
-              href="https://www.hackerrank.com/certificates/7e492bef41e6"
-              target="_blank"
-            >
-              <h3 class="skill-card-certificates">
-                <span class="skill-title">Python</span>
-              </h3>
-              <div class="view-certificate">View Certificate</div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ==================================== -->
+    <div id="certificatePage"></div>
+    <script>
+      fetch("certificates.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("certificatePage").innerHTML = data;
+        })
+        .catch((err) => console.error("This Section not found:", err));
+    </script>
 
-    <!-- <section class="certificates" id="work">
-      <div class="title reveal">
-        <h2 class="section-title">My Work</h2>
-      </div>
-      <div class="content">
-        <div class="card reveal">
-          <div class="card-img">
-            <img src="images/work1.jpg" alt="" />
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="card-img">
-            <img src="images/work2.jpg" alt="" />
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="card-img">
-            <img src="images/work3.jpg" alt="" />
-          </div>
-        </div>
-        <!-- <div class="title reveal">
-          <a href="#" class="btn">See All</a>
-        </div> -->
-    <!-- </div>
-    </section> -->
     <!-- =================services================================ -->
-    <section class="services services-bg" id="services">
-      <div class="title reveal">
-        <h2 class="section-title">My Services</h2>
-        <p class="service-card">
-          Welcome to my portfolio! I'm a dedicated web developer with a focus on
-          creating robust and user-friendly applications. My skills span a
-          variety of technologies, including MERN stack, PHP, Laravel, and
-          WordPress.
-        </p>
-      </div>
-      <div class="content">
-        <div class="card reveal">
-          <div class="service-icon">
-            <i class="fas fa-file-code"></i>
-          </div>
-          <div class="info">
-            <h3>Front-end</h3>
-            <p>
-              Passionate Front-End Developer with a keen eye for design and a
-              knack for creating seamless, user-friendly experiences. Proficient
-              in HTML, CSS, and JavaScript, I specialize in translating creative
-              concepts into functional and visually appealing websites.
-            </p>
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="service-icon">
-            <i class="fas fa-database"></i>
-          </div>
-          <div class="info">
-            <h3>Back-end</h3>
-            <p>
-              I specialize in creating the unseen framework that powers websites
-              and applications. From optimizing databases to ensuring smooth
-              server operations, I bring efficiency to the backend, making sure
-              everything runs seamlessly.
-            </p>
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="service-icon">
-            <i class="fas fa-laptop-code"></i>
-          </div>
-          <div class="info">
-            <h3>MERN Stack</h3>
-            <p>
-              I'm your go-to person for building modern and responsive web
-              applications. With expertise in MongoDB, Express.js, React, and
-              Node.js, I bring seamless integration and robust functionality to
-              your projects.
-            </p>
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="service-icon">
-            <i class="fab fa-wordpress"></i>
-          </div>
-          <div class="info">
-            <h3>Wordpress</h3>
-            <p>
-              WordPress developer passionate about creating dynamic and visually
-              compelling websites. Proficient in HTML, CSS, JavaScript, and PHP,
-              Specializes in theme and plugin development, tailoring solutions
-              to meet the unique needs of clients.
-            </p>
-          </div>
-        </div>
 
-        <div class="card reveal">
-          <div class="service-icon">
-            <i class="fab fa-magento"></i>
-          </div>
-          <div class="info">
-            <h3>Magento.2</h3>
-            <p>
-              An accomplished Magento developer dedicated to building powerful
-              and scalable e-commerce solutions. Proficient in PHP, MySQL, and
-              Magento's architecture, With expertise in customizing and
-              extending Magento functionalities.
-            </p>
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="service-icon">
-            <i class="fas fa-object-group"></i>
-          </div>
-          <div class="info">
-            <h3>Web Designing</h3>
-            <p>
-              talented web designer with a flair for creating visually stunning
-              and user-friendly digital experiences. With a strong foundation in
-              design principles, HTML, CSS, JS and responsive design techniques.
-              Whether it's designing captivating layouts, optimizing user
-              interfaces.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div id="servicesPage"></div>
+    <script>
+      fetch("services.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("servicesPage").innerHTML = data;
+        })
+        .catch((err) => console.error("This Section not found:", err));
+    </script>
+
     <!-- ====================contact================== -->
-    <section class="contact" id="contact">
-      <div class="title reveal">
-        <h2 class="section-title">Contact Me</h2>
-      </div>
-      <div class="content">
-        <div class="row">
-          <div class="card reveal">
-            <div class="contact-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div class="info">
-              <span>
-                <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=akshat303sri@gmail.com"
-                  target="_blank"
-                  class="mywebsit"
-                >
-                  <h3>Email Address</h3>
-                  akshat303sri@gmail.com
-                </a></span
-              >
-            </div>
-          </div>
-          <div class="card reveal">
-            <div class="contact-icon">
-              <i class="fab fa-linkedin-in"></i>
-            </div>
-            <div class="info">
-              <span>
-                <a
-                  href="https://www.linkedin.com/in/akshat303sri/"
-                  target="_blank"
-                  class="mywebsit"
-                >
-                  <h3>LinkedIn</h3>
-                  akshat303sri</a
-                ></span
-              >
-            </div>
-          </div>
-          <div class="card reveal">
-            <div class="contact-icon">
-              <i class="fas fa-mobile-alt"></i>
-            </div>
-            <div class="info">
-              <span>
-                <a href="tel:9914805645" class="mywebsit">
-                  <h3>Mobile</h3>
-                  +91 9914805645</a
-                >
-              </span>
-            </div>
-          </div>
 
-          <div class="card reveal">
-            <div class="contact-icon">
-              <i class="fas fa-globe"></i>
-            </div>
-            <div class="info">
-              <span>
-                <a
-                  href="https://code4dev.netlify.app/"
-                  target="_blank"
-                  class="mywebsit"
-                >
-                  <h3>Website</h3>
-                  My Portfolio</a
-                ></span
-              >
-            </div>
-          </div>
-        </div>
+    <div id="contactPage"></div>
+    <script>
+      fetch("contact.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("contactPage").innerHTML = data;
+        })
+        .catch((err) => console.error("This Section not found:", err));
+    </script>
 
-        <div class="row">
-          <!-- Whatapp message -->
-          <div class="contact-form reveal">
-            <h3>Send WhatApp Message</h3>
-            <form action="">
-              <div class="input-box">
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value=""
-                  placeholder="Name"
-                />
-              </div>
-              <div class="input-box">
-                <input
-                  type="number"
-                  id="phone"
-                  name="phone"
-                  value=""
-                  placeholder="Mobile Number"
-                />
-              </div>
-              <div class="input-box">
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value=""
-                  placeholder="Email"
-                />
-              </div>
-              <div class="input-box">
-                <textarea
-                  type="text"
-                  name="message"
-                  id="message"
-                  rows="8"
-                  cols="80"
-                  placeholder="Message"
-                ></textarea>
-              </div>
-              <div class="input-box">
-                <button class="send-btn" onclick="sendToWhatsapp()">
-                  Send
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- =====================footer============================= -->
     <footer class="footer">
       <span class="footer-title">Akshat Srivastava</span>
       <p>Copyright @2023 <a href="#">My Portfolio</a>. All Rights Reserved.</p>
     </footer>
+
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js" charset="utf-8"></script>

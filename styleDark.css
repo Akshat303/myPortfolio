@@ -1,0 +1,110 @@
+/* Dark mode styles */
+
+/* Variable */
+
+:root {
+  --blue-color: #90caf9;
+  --black-color: #1e1e1e;
+  --white-color: #fff;
+  --dark-blue-color: #3a6cf4;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  /* color: var(--white-color); */
+}
+.dark-mode header .brand {
+  color: var(--blue-color);
+}
+.dark-mode section,
+.dark-mode header,
+.dark-mode footer {
+  background-color: var(--black-color);
+  /* color: var(--white-color)fff; */
+}
+
+/* Optional: change cards, inputs, etc. */
+.dark-mode .card,
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #333;
+  color: var(--white-color);
+}
+
+.contact-form .input-box .send-btn {
+  color: var(--white-color);
+}
+#darkModeToggle {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: fixed;
+  right: 10px;
+  z-index: 999;
+}
+body:not(.dark-mode) #darkModeToggle {
+  background-color: var(--black-color);
+}
+
+.dark-mode .skills,
+.dark-mode .about,
+.dark-mode .certificates,
+.dark-mode .services-bg,
+.dark-mode .work-bg {
+  filter: brightness(0.8) contrast(1.3);
+}
+
+.dark-mode .services .content .card {
+  background: var(--black-color);
+}
+.dark-mode .contact .content .row .card {
+  background: var(--black-color);
+}
+.dark-mode .contact .content .row .card .info h3 {
+  color: var(--white-color);
+}
+.dark-mode .contact-form {
+  background: var(--black-color);
+}
+.dark-mode .contact-form h3 {
+  color: var(--white-color);
+}
+
+.dark-mode input::placeholder,
+textarea::placeholder {
+  color: var(--white-color);
+}
+
+.dark-mode .sticky .navigation a:hover {
+  color: var(--dark-blue-color);
+}
+
+.dark-mode .certificates .content .card .card-img-certificates {
+  background: url(./images/dark_certificate-bg.jpg) 0 0/100% 100% no-repeat;
+}
+.dark-mode .view-certificate {
+  color: var(--white-color);
+}
+
+.dark-mode .skill-card-certificates {
+  color: var(--blue-color);
+}
+.dark-mode .services .content .card .info h3 {
+  color: var(--blue-color);
+}
+
+.dark-mode input.textColor {
+  color: var(--white-color);
+}
+.dark-mode textarea.textColor {
+  color: var(--white-color);
+}
+.dark-mode .myCard {
+  background: var(--black-color);
+  color: var(--white-color);
+}
+
+.dark-mode.card-title {
+  columns: var(--blue-color);
+}

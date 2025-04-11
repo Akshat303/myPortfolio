@@ -1,150 +1,155 @@
-//javascript for navigation bar effects on scroll
+// Navigation bar sticky effect on scroll
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
-  header.classList.toggle("sticky", window.scrollY > 0);
+  if (header) {
+    header.classList.toggle("sticky", window.scrollY > 0);
+  }
 });
 
-//javascript for responsive navigation sidebar menu
-const menuBtn = document.querySelector(".menu-btn");
-const navigation = document.querySelector(".navigation");
-const navigationItems = document.querySelectorAll(".navigation a");
+// Responsive navigation sidebar menu
+window.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.querySelector(".menu-btn");
+  const navigation = document.querySelector(".navigation");
+  const navigationItems = document.querySelectorAll(".navigation a");
 
-menuBtn.addEventListener("click", () => {
-  menuBtn.classList.toggle("active");
-  navigation.classList.toggle("active");
-});
+  if (menuBtn && navigation) {
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
 
-navigationItems.forEach((navigationItem) => {
-  navigationItem.addEventListener("click", () => {
-    menuBtn.classList.remove("active");
-    navigation.classList.remove("active");
+    navigationItems.forEach((navigationItem) => {
+      navigationItem.addEventListener("click", () => {
+        menuBtn.classList.remove("active");
+        navigation.classList.remove("active");
+      });
+    });
+  }
+
+  // Scroll to top button functionality
+  const scrollBtn = document.querySelector(".scrollToTop-btn");
+
+  window.addEventListener("scroll", function () {
+    if (scrollBtn) {
+      scrollBtn.classList.toggle("active", window.scrollY > 500);
+    }
   });
-});
 
-//javascript for scroll to top button
-const scrollBtn = document.querySelector(".scrollToTop-btn");
+  if (scrollBtn) {
+    scrollBtn.addEventListener("click", () => {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    });
+  }
 
-window.addEventListener("scroll", function () {
-  scrollBtn.classList.toggle("active", window.scrollY > 500);
-});
+  // Reveal website elements on scroll
+  function reveal() {
+    const reveals = document.querySelectorAll(".reveal");
 
-//javascript for scroll back to top on click scroll-to-top button
-scrollBtn.addEventListener("click", () => {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-});
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      const revealTop = reveals[i].getBoundingClientRect().top;
+      const revealPoint = 50;
 
-//javascript for reveal website elements on scroll
-window.addEventListener("scroll", reveal);
-
-function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
-
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var revealTop = reveals[i].getBoundingClientRect().top;
-    var revealPoint = 50;
-
-    if (revealTop < windowHeight - revealPoint) {
-      reveals[i].classList.add("active");
+      if (revealTop < windowHeight - revealPoint) {
+        reveals[i].classList.add("active");
+      }
     }
   }
-}
+  window.addEventListener("scroll", reveal);
 
-function sendToWhatsapp() {
-  let number = "+919914805645";
+  // Dark mode toggle
+  const toggleBtn = document.getElementById("darkModeToggle");
+  if (toggleBtn) {
+    function toggleDarkMode() {
+      const isDark = document.body.classList.toggle("dark-mode");
+      toggleBtn.textContent = isDark ? "☀️ " : "🌙 ";
+      localStorage.setItem("darkMode", isDark);
+    }
 
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let phone = document.getElementById("phone").value;
-  let message = document.getElementById("message").value;
+    toggleBtn.addEventListener("click", toggleDarkMode);
 
-  var url =
-    "https://wa.me/" +
-    number +
-    "?text=" +
-    "Name : " +
-    name +
-    "%0a" +
-    "Mobile no. : " +
-    phone +
-    "%0a" +
-    "Email : " +
-    email +
-    "%0a" +
-    "Message : " +
-    message +
-    "%0a%0a";
+    // Load saved theme
+    const isDark = localStorage.getItem("darkMode") === "true";
+    if (isDark) {
+      document.body.classList.add("dark-mode");
+      toggleBtn.textContent = "☀️ ";
+    }
+  }
 
-  window.open(url, "_blank").focus();
-}
+  // WhatsApp sender
+  window.sendToWhatsapp = function () {
+    const number = "+919914805645";
 
-// ================================
+    const name = document.getElementById("name")?.value || "";
+    const email = document.getElementById("email")?.value || "";
+    const phone = document.getElementById("phone")?.value || "";
+    const message = document.getElementById("message")?.value || "";
 
-const toggleBtn = document.getElementById("darkModeToggle");
+    const url =
+      "https://wa.me/" +
+      number +
+      "?text=" +
+      "Name : " +
+      name +
+      "%0a" +
+      "Mobile no. : " +
+      phone +
+      "%0a" +
+      "Email : " +
+      email +
+      "%0a" +
+      "Message : " +
+      message +
+      "%0a%0a";
 
-// Function to switch mode and update button text
-function toggleDarkMode() {
-  const isDark = document.body.classList.toggle("dark-mode");
+    window.open(url, "_blank").focus();
+  };
 
-  // Change button text
-  toggleBtn.textContent = isDark ? "☀️ " : "🌙 ";
+  // Slider auto-scroll and manual scroll
+  const track = document.getElementById("sliderTrack");
+  const container = document.getElementById("sliderContainer");
 
-  // Save preference
-  localStorage.setItem("darkMode", isDark);
-}
+  if (track && container) {
+    let offset = 0;
+    const speed = 1;
+    let animationId;
+    const cardWidth = 320;
+    const totalCards = track.children.length;
 
-// Add click event
-toggleBtn.addEventListener("click", toggleDarkMode);
+    function animateSlider() {
+      offset += speed;
+      if (offset >= (cardWidth * totalCards) / 2) {
+        offset = 0;
+      }
+      track.style.transform = `translateX(-${offset}px)`;
+      animationId = requestAnimationFrame(animateSlider);
+    }
 
-// Load preference and set button text on page load
-window.addEventListener("load", () => {
-  const isDark = localStorage.getItem("darkMode") === "true";
-  if (isDark) {
-    document.body.classList.add("dark-mode");
-    toggleBtn.textContent = "☀️ ";
+    container.addEventListener("mouseenter", () => {
+      cancelAnimationFrame(animationId);
+    });
+
+    container.addEventListener("mouseleave", () => {
+      animateSlider();
+    });
+
+    window.slideNext = function () {
+      offset += cardWidth;
+      if (offset >= (cardWidth * totalCards) / 2) {
+        offset = 0;
+      }
+      track.style.transform = `translateX(-${offset}px)`;
+    };
+
+    window.slidePrev = function () {
+      offset -= cardWidth;
+      if (offset < 0) {
+        offset = (cardWidth * totalCards) / 2 - cardWidth;
+      }
+      track.style.transform = `translateX(-${offset}px)`;
+    };
+
+    animateSlider(); // Start auto slide
   }
 });
-
-const track = document.getElementById("sliderTrack");
-const container = document.getElementById("sliderContainer");
-let offset = 0;
-const speed = 1; // px per frame
-let animationId;
-const cardWidth = 320; // including margin
-const totalCards = track.children.length;
-
-function animateSlider() {
-  offset += speed;
-  if (offset >= (cardWidth * totalCards) / 2) {
-    offset = 0;
-  }
-  track.style.transform = `translateX(-${offset}px)`;
-  animationId = requestAnimationFrame(animateSlider);
-}
-
-container.addEventListener("mouseenter", () => {
-  cancelAnimationFrame(animationId);
-});
-
-container.addEventListener("mouseleave", () => {
-  animateSlider();
-});
-
-function slideNext() {
-  offset += cardWidth;
-  if (offset >= (cardWidth * totalCards) / 2) {
-    offset = 0;
-  }
-  track.style.transform = `translateX(-${offset}px)`;
-}
-
-function slidePrev() {
-  offset -= cardWidth;
-  if (offset < 0) {
-    offset = (cardWidth * totalCards) / 2 - cardWidth;
-  }
-  track.style.transform = `translateX(-${offset}px)`;
-}
-
-animateSlider(); // start auto sliding
